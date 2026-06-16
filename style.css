@@ -950,3 +950,138 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 
+/* ==========================================
+   BENYORIKI DEVELOPER LINK 2026
+========================================== */
+
+.developer-link{
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    background: linear-gradient(
+      90deg,
+      #2563ff,
+      #06b6d4,
+      #a855f7,
+      #2563ff
+    );
+
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation:
+      neonGradient 6s linear infinite,
+      brokenLamp 4s infinite;
+
+    transition: all .4s ease;
+}
+
+/* Hover Modern */
+.developer-link:hover{
+    transform: translateY(-3px) scale(1.05);
+    filter:
+      drop-shadow(0 0 8px #2563ff)
+      drop-shadow(0 0 18px #06b6d4)
+      drop-shadow(0 0 28px #a855f7);
+}
+
+/* Garis neon */
+.developer-link::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    width:100%;
+    height:2px;
+
+    background:linear-gradient(
+      90deg,
+      #2563ff,
+      #06b6d4,
+      #a855f7
+    );
+
+    border-radius:999px;
+
+    transform:scaleX(0);
+    transform-origin:left;
+
+    transition:.4s ease;
+}
+
+.developer-link:hover::after{
+    transform:scaleX(1);
+}
+
+/* Lampu rusak */
+@keyframes brokenLamp{
+
+    0%,18%,22%,25%,53%,57%,100%{
+        opacity:1;
+        filter:
+        drop-shadow(0 0 4px #2563ff)
+        drop-shadow(0 0 10px #06b6d4)
+        drop-shadow(0 0 20px #a855f7);
+    }
+
+    19%,21%,24%,54%,56%{
+        opacity:.15;
+        filter:none;
+    }
+
+    70%{
+        opacity:.35;
+    }
+
+    72%{
+        opacity:1;
+    }
+
+    74%{
+        opacity:.1;
+    }
+
+    76%{
+        opacity:1;
+    }
+}
+
+/* Gradient bergerak */
+@keyframes neonGradient{
+    0%{
+        background-position:0% center;
+    }
+    100%{
+        background-position:300% center;
+    }
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .developer-link{
+        font-size:.9rem;
+        text-align:center;
+    }
+
+}
+
+
+.footer-bottom{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:25px 15px;
+    text-align:center;
+}
+
+.footer-bottom p{
+    margin:0;
+}
