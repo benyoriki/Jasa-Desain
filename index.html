@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a1a" />
+
+  <!-- SEO -->
+  <title>Visual Art Studio – Jasa Desain Grafis & Arsitektur Profesional</title>
+  <meta name="description" content="Visual Art Studio: Jasa desain grafis profesional meliputi denah rumah 2D/3D, desain interior, logo, banner, brosur, konten media sosial, dan rendering arsitektur. Kualitas premium, harga kompetitif." />
+  <meta name="keywords" content="jasa desain grafis, desain logo, desain interior, denah rumah 3D, rendering arsitektur, desain banner, brosur, kartu nama, Visual Art Studio" />
+  <meta name="author" content="Visual Art Studio" />
+  <link rel="canonical" href="https://visualartstudio.id/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Visual Art Studio – Jasa Desain Profesional" />
+  <meta property="og:description" content="Wujudkan ide Anda menjadi karya visual berkualitas tinggi dengan sentuhan profesional." />
+  <meta property="og:url" content="https://visualartstudio.id/" />
+  <meta property="og:image" content="https://visualartstudio.id/og-image.jpg" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Visual Art Studio – Jasa Desain Profesional" />
+  <meta name="twitter:description" content="Desain profesional untuk rumah, bisnis, dan branding Anda." />
+  <meta name="twitter:image" content="https://visualartstudio.id/og-image.jpg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Visual Art Studio",
+    "description": "Jasa desain grafis profesional meliputi denah rumah, interior, logo, banner, dan konten media sosial.",
+    "url": "https://visualartstudio.id/",
+    "telephone": "+6283151144948",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ID"
+    },
+    "openingHours": "Mo-Sa 08:00-21:00",
+    "priceRange": "$$",
+    "sameAs": [
+      "https://instagram.com/visualartstudio",
+      "https://facebook.com/visualartstudio"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-logo">VAS</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- CURSOR GLOW -->
+<div id="cursor-glow" aria-hidden="true"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Navigasi utama">
+  <div class="nav-container">
+    <a href="#beranda" class="nav-logo" aria-label="Visual Art Studio – Beranda">
+      <span class="logo-mark">VAS</span>
+      <span class="logo-text">Visual Art Studio</span>
+    </a>
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+      <li><a href="#tentang" class="nav-link">Tentang</a></li>
+      <li><a href="#layanan" class="nav-link">Layanan</a></li>
+      <li><a href="#portofolio" class="nav-link">Portofolio</a></li>
+      <li><a href="#testimoni" class="nav-link">Testimoni</a></li>
+      <li><a href="#faq" class="nav-link">FAQ</a></li>
+      <li><a href="#kontak" class="nav-link">Kontak</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-toggle" aria-label="Ganti tema">
+        <span class="theme-icon">☀️</span>
+      </button>
+      <a href="https://wa.me/6283151144948" class="btn-nav magnetic" target="_blank" rel="noopener">Pesan Sekarang</a>
+      <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="beranda" class="hero">
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="hero-shapes" aria-hidden="true">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+  <div class="hero-container">
+    <div class="hero-badge reveal-fade">✦ Studio Desain Premium 2026</div>
+    <h1 class="hero-title reveal-up">
+      Desain Profesional<br/>untuk <span class="gradient-text">Rumah, Bisnis</span><br/>dan Branding Anda
+    </h1>
+    <p class="hero-sub reveal-up delay-1">
+      Wujudkan ide Anda menjadi karya visual berkualitas tinggi<br class="d-none-sm"/> dengan sentuhan profesional.
+    </p>
+    <div class="hero-cta reveal-up delay-2">
+      <a href="https://wa.me/6283151144948" class="btn-primary magnetic ripple" target="_blank" rel="noopener">
+        <span>💬</span> Pesan Sekarang
+      </a>
+      <a href="https://wa.me/6283151144948" class="btn-glass magnetic ripple" target="_blank" rel="noopener">
+        <span>🎯</span> Konsultasi Gratis
+      </a>
+      <a href="#portofolio" class="btn-outline magnetic" >
+        <span>🖼</span> Lihat Portofolio
+      </a>
+    </div>
+    <div class="hero-stats reveal-fade delay-3">
+      <div class="hero-stat"><strong>500+</strong><span>Project Selesai</span></div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat"><strong>350+</strong><span>Klien Puas</span></div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat"><strong>98%</strong><span>Kepuasan</span></div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat"><strong>5 Thn</strong><span>Pengalaman</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="scroll-dot"></div>
+  </div>
+</section>
+
+<!-- TENTANG -->
+<section id="tentang" class="section about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal-left">
+        <div class="about-card glass">
+          <div class="about-icon-grid">
+            <div class="icon-item">🏠</div>
+            <div class="icon-item">🎨</div>
+            <div class="icon-item">✏️</div>
+            <div class="icon-item">📐</div>
+          </div>
+          <div class="about-badge">
+            <span>⭐</span> Premium Quality Studio
+          </div>
+        </div>
+        <div class="about-float glass">
+          <div class="float-num">5+</div>
+          <div>Tahun Berkarya</div>
+        </div>
+      </div>
+      <div class="about-content reveal-right">
+        <div class="section-eyebrow">Tentang Kami</div>
+        <h2 class="section-title">Kreativitas Tanpa Batas, <span class="gradient-text">Kualitas Tanpa Kompromi</span></h2>
+        <p class="about-text">Visual Art Studio adalah studio desain profesional yang berdedikasi menghadirkan solusi visual terbaik untuk kebutuhan arsitektur, interior, dan branding Anda. Kami menggabungkan kreativitas tinggi dengan teknologi terkini untuk menghasilkan karya yang memukau.</p>
+        <p class="about-text">Dengan tim yang berpengalaman dan portofolio lebih dari 500 project, kami siap membantu mewujudkan visi Anda menjadi kenyataan visual yang mengesankan.</p>
+        <div class="about-features">
+          <div class="feature-tag">✔ Revisi Fleksibel</div>
+          <div class="feature-tag">✔ Pengiriman Tepat Waktu</div>
+          <div class="feature-tag">✔ File Siap Cetak</div>
+          <div class="feature-tag">✔ Konsultasi Gratis</div>
+        </div>
+        <a href="https://wa.me/6283151144948" class="btn-primary magnetic ripple" target="_blank" rel="noopener">Konsultasi Sekarang</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYANAN -->
+<section id="layanan" class="section services">
+  <div class="container">
+    <div class="section-header reveal-fade">
+      <div class="section-eyebrow">Layanan Kami</div>
+      <h2 class="section-title">Solusi Desain <span class="gradient-text">Lengkap & Profesional</span></h2>
+      <p class="section-sub">Dari arsitektur hingga branding digital, kami hadirkan solusi visual terbaik untuk setiap kebutuhan Anda.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card glass reveal-up delay-0">
+        <div class="service-icon">🏗️</div>
+        <h3>Denah Rumah 2D & 3D</h3>
+        <p>Visualisasi denah rumah detail dan akurat sesuai kebutuhan konstruksi Anda.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Pesan →</a>
+      </div>
+
+      <div class="service-card glass reveal-up delay-1">
+        <div class="service-icon">📋</div>
+        <h3>Gambar Kerja Bangunan</h3>
+        <p>Dokumen teknis lengkap siap digunakan untuk proses perizinan dan konstruksi.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Pesan →</a>
+      </div>
+
+      <div class="service-card glass reveal-up delay-2">
+        <div class="service-icon">🛋️</div>
+        <h3>Desain Interior & Eksterior</h3>
+        <p>Konsep interior dan eksterior modern yang estetik dan fungsional.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Pesan →</a>
+      </div>
+
+      <div class="service-card glass reveal-up delay-3">
+        <div class="service-icon">🖼️</div>
+        <h3>Rendering Arsitektur Realistis</h3>
+        <p>Visualisasi 3D fotorealistis yang memperlihatkan detail sempurna bangunan Anda.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Pesan →</a>
+      </div>
+
+      <div class="service-card glass reveal-up delay-0">
+        <div class="service-icon">✨</div>
+        <h3>Desain Logo Profesional</h3>
+        <p>Logo unik dan berkarakter yang mencerminkan identitas brand Anda.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Pesan →</a>
+      </div>
+
+      <div class="service-card glass reveal-up delay-1">
+        <div class="service-icon">🎯</div>
+        <h3>Desain Banner & Spanduk</h3>
+        <p>Banner dan spanduk menarik yang efektif mempromosikan bisnis Anda.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Pesan →</a>
+      </div>
+
+      <div class="service-card glass reveal-up delay-2">
+        <div class="service-icon">📄</div>
+        <h3>Desain Brosur & Flyer</h3>
+        <p>Brosur dan flyer profesional yang memikat perhatian target pasar Anda.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Pesan →</a>
+      </div>
+
+      <div class="service-card glass reveal-up delay-3">
+        <div class="service-icon">💳</div>
+        <h3>Desain Kartu Nama</h3>
+        <p>Kartu nama elegan yang meninggalkan kesan profesional dan tak terlupakan.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Pesan →</a>
+      </div>
+
+      <div class="service-card glass reveal-up delay-0">
+        <div class="service-icon">📱</div>
+        <h3>Desain Konten Media Sosial</h3>
+        <p>Konten visual menarik untuk feed Instagram, Facebook, TikTok, dan platform lainnya.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Pesan →</a>
+      </div>
+
+      <div class="service-card glass reveal-up delay-1">
+        <div class="service-icon">📦</div>
+        <h3>Desain Kemasan Produk</h3>
+        <p>Packaging produk yang menarik dan memperkuat nilai jual produk Anda.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Pesan →</a>
+      </div>
+
+      <div class="service-card glass reveal-up delay-2">
+        <div class="service-icon">🖌️</div>
+        <h3>Editing Foto Profesional</h3>
+        <p>Retouching dan editing foto dengan hasil yang natural dan berkualitas tinggi.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Pesan →</a>
+      </div>
+
+      <div class="service-card glass reveal-up delay-3">
+        <div class="service-icon">💌</div>
+        <h3>Desain Undangan Digital</h3>
+        <p>Undangan digital elegan untuk pernikahan, ulang tahun, dan berbagai acara spesial.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Pesan →</a>
+      </div>
+
+      <div class="service-card glass reveal-up delay-0">
+        <div class="service-icon">🎨</div>
+        <h3>Ilustrasi & Vector Art</h3>
+        <p>Ilustrasi custom dan vector art berkualitas tinggi untuk kebutuhan apapun.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Pesan →</a>
+      </div>
+
+      <div class="service-card glass service-card--featured reveal-up delay-1">
+        <div class="service-icon">⚡</div>
+        <h3>Desain Custom Sesuai Kebutuhan</h3>
+        <p>Tidak menemukan layanan yang Anda cari? Ceritakan kebutuhan Anda dan kami siap mewujudkannya.</p>
+        <a href="https://wa.me/6283151144948" class="service-link" target="_blank" rel="noopener">Konsultasi Gratis →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PORTOFOLIO -->
+<section id="portofolio" class="section portfolio">
+  <div class="container">
+    <div class="section-header reveal-fade">
+      <div class="section-eyebrow">Portofolio</div>
+      <h2 class="section-title">Karya <span class="gradient-text">Terbaik Kami</span></h2>
+      <p class="section-sub">Hasil nyata yang berbicara sendiri — ratusan project sukses untuk klien di seluruh Indonesia.</p>
+    </div>
+    <div class="portfolio-filter reveal-fade" role="tablist" aria-label="Filter portofolio">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Semua</button>
+      <button class="filter-btn" data-filter="arsitektur" role="tab" aria-selected="false">Arsitektur</button>
+      <button class="filter-btn" data-filter="interior" role="tab" aria-selected="false">Interior</button>
+      <button class="filter-btn" data-filter="logo" role="tab" aria-selected="false">Logo</button>
+      <button class="filter-btn" data-filter="banner" role="tab" aria-selected="false">Banner</button>
+      <button class="filter-btn" data-filter="brosur" role="tab" aria-selected="false">Brosur</button>
+    </div>
+    <div class="portfolio-grid" id="portfolioGrid">
+      <!-- Arsitektur -->
+      <div class="portfolio-item reveal-up" data-cat="arsitektur">
+        <div class="portfolio-visual pv-1">
+          <div class="pv-content">
+            <span class="pv-emoji">🏠</span>
+            <span class="pv-label">Denah Rumah 2 Lantai</span>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <span class="po-cat">Arsitektur</span>
+          <span class="po-title">Rumah Modern 2 Lantai</span>
+          <a href="https://wa.me/6283151144948" class="po-btn" target="_blank" rel="noopener">Order Serupa</a>
+        </div>
+      </div>
+      <div class="portfolio-item reveal-up delay-1" data-cat="arsitektur">
+        <div class="portfolio-visual pv-2">
+          <div class="pv-content">
+            <span class="pv-emoji">🏗️</span>
+            <span class="pv-label">Rendering 3D Eksterior</span>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <span class="po-cat">Arsitektur</span>
+          <span class="po-title">Villa Tropis Rendering 3D</span>
+          <a href="https://wa.me/6283151144948" class="po-btn" target="_blank" rel="noopener">Order Serupa</a>
+        </div>
+      </div>
+      <!-- Interior -->
+      <div class="portfolio-item reveal-up delay-2" data-cat="interior">
+        <div class="portfolio-visual pv-3">
+          <div class="pv-content">
+            <span class="pv-emoji">🛋️</span>
+            <span class="pv-label">Desain Interior Living Room</span>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <span class="po-cat">Interior</span>
+          <span class="po-title">Living Room Minimalis Modern</span>
+          <a href="https://wa.me/6283151144948" class="po-btn" target="_blank" rel="noopener">Order Serupa</a>
+        </div>
+      </div>
+      <div class="portfolio-item reveal-up delay-3" data-cat="interior">
+        <div class="portfolio-visual pv-4">
+          <div class="pv-content">
+            <span class="pv-emoji">🛏️</span>
+            <span class="pv-label">Desain Kamar Tidur</span>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <span class="po-cat">Interior</span>
+          <span class="po-title">Bedroom Skandinavian</span>
+          <a href="https://wa.me/6283151144948" class="po-btn" target="_blank" rel="noopener">Order Serupa</a>
+        </div>
+      </div>
+      <!-- Logo -->
+      <div class="portfolio-item reveal-up delay-0" data-cat="logo">
+        <div class="portfolio-visual pv-5">
+          <div class="pv-content">
+            <span class="pv-emoji">✨</span>
+            <span class="pv-label">Logo Brand Kafe</span>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <span class="po-cat">Logo</span>
+          <span class="po-title">Brand Identity Kafe Lokal</span>
+          <a href="https://wa.me/6283151144948" class="po-btn" target="_blank" rel="noopener">Order Serupa</a>
+        </div>
+      </div>
+      <div class="portfolio-item reveal-up delay-1" data-cat="logo">
+        <div class="portfolio-visual pv-6">
+          <div class="pv-content">
+            <span class="pv-emoji">🏢</span>
+            <span class="pv-label">Logo Perusahaan</span>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <span class="po-cat">Logo</span>
+          <span class="po-title">Corporate Logo Modern</span>
+          <a href="https://wa.me/6283151144948" class="po-btn" target="_blank" rel="noopener">Order Serupa</a>
+        </div>
+      </div>
+      <!-- Banner -->
+      <div class="portfolio-item reveal-up delay-2" data-cat="banner">
+        <div class="portfolio-visual pv-7">
+          <div class="pv-content">
+            <span class="pv-emoji">🎯</span>
+            <span class="pv-label">Banner Promo Lebaran</span>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <span class="po-cat">Banner</span>
+          <span class="po-title">Spanduk Promo Lebaran</span>
+          <a href="https://wa.me/6283151144948" class="po-btn" target="_blank" rel="noopener">Order Serupa</a>
+        </div>
+      </div>
+      <!-- Brosur -->
+      <div class="portfolio-item reveal-up delay-3" data-cat="brosur">
+        <div class="portfolio-visual pv-8">
+          <div class="pv-content">
+            <span class="pv-emoji">📄</span>
+            <span class="pv-label">Brosur Property</span>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <span class="po-cat">Brosur</span>
+          <span class="po-title">Brosur Pemasaran Properti</span>
+          <a href="https://wa.me/6283151144948" class="po-btn" target="_blank" rel="noopener">Order Serupa</a>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-cta reveal-fade">
+      <p>Tertarik dengan karya kami? Diskusikan proyek Anda dengan tim kami.</p>
+      <a href="https://wa.me/6283151144948" class="btn-primary magnetic ripple" target="_blank" rel="noopener">💬 Diskusi Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section class="section advantages">
+  <div class="container">
+    <div class="section-header reveal-fade">
+      <div class="section-eyebrow">Keunggulan</div>
+      <h2 class="section-title">Mengapa Pilih <span class="gradient-text">Visual Art Studio?</span></h2>
+    </div>
+    <div class="advantages-grid">
+      <div class="adv-card glass reveal-up delay-0">
+        <div class="adv-icon">🏆</div>
+        <h3>Profesional</h3>
+        <p>Tim desainer berpengalaman dengan standar kualitas internasional di setiap karya.</p>
+      </div>
+      <div class="adv-card glass reveal-up delay-1">
+        <div class="adv-icon">⚡</div>
+        <h3>Fast Response</h3>
+        <p>Respon cepat dalam 1×24 jam. Kami menghargai waktu Anda.</p>
+      </div>
+      <div class="adv-card glass reveal-up delay-2">
+        <div class="adv-icon">💎</div>
+        <h3>Hasil Berkualitas</h3>
+        <p>Setiap project dikerjakan dengan penuh dedikasi untuk menghasilkan karya terbaik.</p>
+      </div>
+      <div class="adv-card glass reveal-up delay-3">
+        <div class="adv-icon">💰</div>
+        <h3>Harga Kompetitif</h3>
+        <p>Kualitas premium dengan harga yang terjangkau dan transparan tanpa biaya tersembunyi.</p>
+      </div>
+      <div class="adv-card glass reveal-up delay-0">
+        <div class="adv-icon">🔄</div>
+        <h3>Revisi Mudah</h3>
+        <p>Revisi fleksibel hingga Anda benar-benar puas dengan hasilnya.</p>
+      </div>
+      <div class="adv-card glass reveal-up delay-1">
+        <div class="adv-icon">🎓</div>
+        <h3>Berpengalaman</h3>
+        <p>Lebih dari 5 tahun melayani ratusan klien di seluruh Indonesia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATISTIK -->
+<section class="section stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal-up delay-0">
+        <div class="stat-number" data-target="500">0</div>
+        <div class="stat-plus">+</div>
+        <div class="stat-label">Project Selesai</div>
+      </div>
+      <div class="stat-item reveal-up delay-1">
+        <div class="stat-number" data-target="350">0</div>
+        <div class="stat-plus">+</div>
+        <div class="stat-label">Klien Puas</div>
+      </div>
+      <div class="stat-item reveal-up delay-2">
+        <div class="stat-number" data-target="98">0</div>
+        <div class="stat-plus">%</div>
+        <div class="stat-label">Tingkat Kepuasan</div>
+      </div>
+      <div class="stat-item reveal-up delay-3">
+        <div class="stat-number" data-target="5">0</div>
+        <div class="stat-plus"> Thn</div>
+        <div class="stat-label">Pengalaman</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section id="testimoni" class="section testimonials">
+  <div class="container">
+    <div class="section-header reveal-fade">
+      <div class="section-eyebrow">Testimoni</div>
+      <h2 class="section-title">Kata <span class="gradient-text">Klien Kami</span></h2>
+      <p class="section-sub">Kepercayaan klien adalah aset terbesar kami.</p>
+    </div>
+    <div class="testimonial-slider" id="testimonialSlider">
+      <div class="testimonial-track" id="testimonialTrack">
+
+        <div class="testimonial-card glass">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Desain denah rumah saya benar-benar melebihi ekspektasi! Detail sangat teliti dan hasilnya sangat profesional. Sangat puas dan pasti akan order lagi."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">BP</div>
+            <div>
+              <strong>Budi Prasetyo</strong>
+              <span>Klien Arsitektur, Jakarta</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Logo bisnis saya kini terlihat jauh lebih profesional. Tim Visual Art Studio sangat responsif dan sabar menghadapi revisi saya. Highly recommended!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SR</div>
+            <div>
+              <strong>Sari Rahayu</strong>
+              <span>Owner Kafe, Bandung</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Rendering 3D eksterior villa saya tampak seperti foto asli! Klien-klien saya terkesan dan ini sangat membantu penjualan properti saya."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">HA</div>
+            <div>
+              <strong>Hendra Agung</strong>
+              <span>Developer Properti, Surabaya</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Brosur produk saya terlihat sangat elegan dan profesional. Penjualan meningkat signifikan setelah menggunakan desain dari Visual Art Studio."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">DN</div>
+            <div>
+              <strong>Dewi Natalia</strong>
+              <span>Pebisnis UMKM, Yogyakarta</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Konten media sosial yang dibuat sangat on-brand dan engagement saya meningkat drastis. Team-nya kreatif dan selalu tepat waktu deliver."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MF</div>
+            <div>
+              <strong>Muhammad Fajar</strong>
+              <span>Content Creator, Makassar</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" id="sliderPrev" aria-label="Testimoni sebelumnya">‹</button>
+        <div class="slider-dots" id="sliderDots" role="tablist"></div>
+        <button class="slider-btn" id="sliderNext" aria-label="Testimoni berikutnya">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section faq-section">
+  <div class="container">
+    <div class="section-header reveal-fade">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-title">Pertanyaan yang <span class="gradient-text">Sering Ditanyakan</span></h2>
+    </div>
+    <div class="faq-list" id="faqList">
+
+      <div class="faq-item reveal-up delay-0">
+        <button class="faq-q" aria-expanded="false">
+          <span>Berapa harga jasa desain di Visual Art Studio?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Harga bervariasi tergantung kompleksitas dan jenis desain. Denah rumah mulai dari Rp 150.000, desain logo mulai Rp 100.000, banner mulai Rp 50.000. Hubungi kami melalui WhatsApp untuk penawaran terbaik dan spesifik sesuai kebutuhan Anda.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-up delay-1">
+        <button class="faq-q" aria-expanded="false">
+          <span>Berapa lama proses pengerjaan?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Waktu pengerjaan tergantung jenis desain: desain logo 1–3 hari, banner 1–2 hari, denah rumah 3–7 hari, rendering 3D 5–10 hari. Untuk proyek mendesak, kami menyediakan layanan express dengan biaya tambahan.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-up delay-2">
+        <button class="faq-q" aria-expanded="false">
+          <span>Bagaimana cara melakukan pemesanan?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Sangat mudah! Hubungi kami via WhatsApp di +62 831-5114-4948. Ceritakan kebutuhan Anda, kami akan memberikan penawaran dan estimasi waktu. Setelah deal, bayar DP, dan kami mulai pengerjaan. File final dikirim setelah pelunasan.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-up delay-3">
+        <button class="faq-q" aria-expanded="false">
+          <span>Apakah ada revisi setelah desain jadi?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Ya, tentu! Kami menyediakan revisi sesuai paket yang dipilih. Revisi minor seperti perubahan warna, teks, dan posisi elemen tidak dikenakan biaya tambahan. Kami berkomitmen untuk hasil yang sesuai keinginan Anda.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-up delay-0">
+        <button class="faq-q" aria-expanded="false">
+          <span>Format file apa yang akan saya terima?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Kami menyediakan file dalam berbagai format sesuai kebutuhan: PNG, JPG (untuk tampilan digital), PDF (untuk cetak), AI/CDR/PSD (file source editable), dan format lain sesuai permintaan. Semua file siap cetak resolusi tinggi.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-up delay-1">
+        <button class="faq-q" aria-expanded="false">
+          <span>Apakah bisa melihat contoh portofolio?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Tentu saja! Anda bisa melihat sampel portofolio di bagian Portofolio pada halaman ini. Untuk portofolio lebih lengkap dan spesifik sesuai jenis layanan yang Anda butuhkan, hubungi kami via WhatsApp.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="section cta-section">
+  <div class="cta-bg" aria-hidden="true"></div>
+  <div class="container cta-container reveal-fade">
+    <div class="cta-badge">🚀 Mulai Project Anda Hari Ini</div>
+    <h2 class="cta-title">Siap Membuat Desain <span class="gradient-text">Impian Anda?</span></h2>
+    <p class="cta-sub">Hubungi kami sekarang dan dapatkan konsultasi gratis. Tim profesional kami siap membantu mewujudkan visi Anda menjadi karya visual yang luar biasa.</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/6283151144948" class="btn-whatsapp magnetic ripple" target="_blank" rel="noopener">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat WhatsApp Sekarang
+      </a>
+    </div>
+    <p class="cta-note">✅ Respon dalam 1 jam &nbsp;·&nbsp; ✅ Konsultasi gratis &nbsp;·&nbsp; ✅ Tanpa biaya pendaftaran</p>
+  </div>
+</section>
+
+<!-- KONTAK & FOOTER -->
+<footer id="kontak" class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-mark">VAS</span>
+          <span class="logo-text">Visual Art Studio</span>
+        </div>
+        <p class="footer-tagline">Studio desain profesional untuk kebutuhan arsitektur, interior, dan branding visual Anda.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Instagram Visual Art Studio" title="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Facebook Visual Art Studio" title="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="TikTok Visual Art Studio" title="TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.16 8.16 0 004.77 1.52V6.76a4.85 4.85 0 01-1-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-heading">Layanan</h4>
+        <ul>
+          <li><a href="https://wa.me/6283151144948" target="_blank" rel="noopener">Denah Rumah 2D & 3D</a></li>
+          <li><a href="https://wa.me/6283151144948" target="_blank" rel="noopener">Desain Interior</a></li>
+          <li><a href="https://wa.me/6283151144948" target="_blank" rel="noopener">Rendering Arsitektur</a></li>
+          <li><a href="https://wa.me/6283151144948" target="_blank" rel="noopener">Desain Logo</a></li>
+          <li><a href="https://wa.me/6283151144948" target="_blank" rel="noopener">Banner & Brosur</a></li>
+          <li><a href="https://wa.me/6283151144948" target="_blank" rel="noopener">Konten Media Sosial</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-heading">Menu</h4>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#portofolio">Portofolio</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4 class="footer-heading">Kontak</h4>
+        <div class="footer-contact-item">
+          <span>📱</span>
+          <div>
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/6283151144948" target="_blank" rel="noopener">+62 831-5114-4948</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <span>📧</span>
+          <div>
+            <strong>Email</strong>
+            <a href="mailto:hello@visualartstudio.id">hello@visualartstudio.id</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <span>📍</span>
+          <div>
+            <strong>Lokasi</strong>
+            <span>Indonesia (Remote/Online)</span>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <span>🕐</span>
+          <div>
+            <strong>Jam Operasional</strong>
+            <span>Senin – Sabtu, 08.00 – 21.00 WIB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Visual Art Studio. All rights reserved.</p>
+      <p>Dibuat dengan ❤️ untuk hasil terbaik Anda</p>
+    </div>
+  </div>
+</footer>
+
+<!-- CHATBOT -->
+<div id="chatbot" class="chatbot" role="dialog" aria-label="Asisten Visual Art Studio" aria-hidden="true">
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      <div class="chatbot-avatar">VAS</div>
+      <div class="chatbot-info">
+        <strong>Visual Art Studio</strong>
+        <span class="chatbot-status">● Online</span>
+      </div>
+      <button class="chatbot-close" id="chatbotClose" aria-label="Tutup chat">✕</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="chat-msg bot">
+        <div class="chat-bubble">Halo! 👋 Selamat datang di <strong>Visual Art Studio</strong>. Saya siap membantu Anda. Ada yang bisa saya bantu?</div>
+      </div>
+    </div>
+    <div class="chatbot-quick" id="chatbotQuick">
+      <button class="quick-btn" data-q="harga">💰 Info Harga</button>
+      <button class="quick-btn" data-q="layanan">🎨 Layanan</button>
+      <button class="quick-btn" data-q="waktu">⏱ Lama Pengerjaan</button>
+      <button class="quick-btn" data-q="pesan">📋 Cara Pesan</button>
+      <button class="quick-btn" data-q="portofolio">🖼 Portofolio</button>
+    </div>
+    <div class="chatbot-input-area">
+      <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Ketik pesan Anda..." maxlength="200" autocomplete="off" />
+      <button id="chatbotSend" class="chatbot-send" aria-label="Kirim pesan">➤</button>
+    </div>
+  </div>
+  <button class="chatbot-toggle" id="chatbotToggle" aria-label="Buka asisten chat">
+    <span class="toggle-icon-open">💬</span>
+    <span class="toggle-icon-close" style="display:none">✕</span>
+    <span class="chatbot-badge" id="chatbotBadge">1</span>
+  </button>
+</div>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/6283151144948" class="wa-float magnetic" target="_blank" rel="noopener" aria-label="Hubungi via WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
