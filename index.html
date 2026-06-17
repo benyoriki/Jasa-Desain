@@ -2,35 +2,25 @@
 <html lang="id" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Arsitek Studio — Jasa Desain Rumah Mewah & Arsitektur Premium</title>
   <meta name="description" content="Arsitek Studio adalah biro arsitektur premium yang menghadirkan desain rumah mewah, interior elegan, dan pengalaman membangun yang menyenangkan. Berlokasi di Bogor dan Semarang.">
   <meta name="keywords" content="jasa desain rumah, arsitek, interior, renovasi, bangun rumah, arsitektur premium, rumah mewah">
   <meta name="author" content="Arsitek Studio">
   <meta name="robots" content="index, follow">
-  <link rel="icon" href="favicon.png" type="image/png">
-<link rel="apple-touch-icon" href="favicon.png">
-  
 
-<!-- Primary Meta -->
-<meta name="title" content="Jasa Desain Profesional 2026 — Denah Rumah, Logo, Banner & Desain Grafis">
-<meta name="description" content="Layanan desain grafis profesional untuk denah rumah 2D/3D, gambar kerja bangunan, logo, banner, brosur, konten media sosial, dan berbagai kebutuhan desain visual berkualitas tinggi dengan harga terjangkau.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arsitek Studio — Jasa Desain Rumah Mewah">
+  <meta property="og:description" content="Setiap Rumah Punya Cerita. Kami membantu mewujudkan rumah impian yang sesuai dengan karakter dan gaya hidup Anda.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arsitekstudio.github.io/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80">
 
-<!-- Open Graph / WhatsApp / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://benyoriki.github.io/Jasa-Desain/">
-<meta property="og:title" content="Jasa Desain Profesional — Wujudkan Ide Menjadi Karya Visual Berkualitas ✨">
-<meta property="og:description" content="Denah rumah, gambar bangunan, logo, banner, brosur, hingga desain branding profesional. Cepat, berkualitas, dan siap membantu kebutuhan desain Anda.">
-<meta property="og:image" content="https://benyoriki.github.io/Jasa-Desain/preview.jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="Jasa Desain Profesional 2026 — Kreatif, Modern & Berkualitas">
-<meta property="twitter:description" content="Solusi desain profesional untuk kebutuhan rumah, bisnis, dan branding. Hasil berkualitas, respons cepat, dan harga kompetitif.">
-<meta property="twitter:image" content="https://benyoriki.github.io/Jasa-Desain/preview.jpeg">
-
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Arsitek Studio — Jasa Desain Rumah Mewah">
+  <meta name="twitter:description" content="Setiap Rumah Punya Cerita.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80">
 
   <!-- Schema JSON-LD -->
   <script type="application/ld+json">
@@ -39,7 +29,7 @@
     "@type": "LocalBusiness",
     "name": "Arsitek Studio",
     "description": "Biro Arsitektur dan Interior Premium",
-    "url": "https://benyoriki.github.io/Jasa-Desain/",
+    "url": "https://arsitekstudio.github.io/",
     "telephone": "+62-812-3456-7890",
     "email": "hello@arsitekstudio.com",
     "address": {
@@ -57,10 +47,45 @@
   </script>
 
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
 
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Critical mobile fixes -->
+  <style>
+    /* Prevent horizontal overflow on all screens */
+    html, body { max-width: 100%; overflow-x: hidden; }
+    
+    /* iOS 100vh fix */
+    #hero { height: 100vh; height: 100svh; }
+    
+    /* Navbar always visible */
+    #navbar { width: 100%; left: 0; right: 0; }
+    
+    /* Prevent text overflow on mobile */
+    .hero-eyebrow { word-break: break-word; }
+    
+    /* Fix info bar overflow */
+    .hero-info-bar { 
+      box-sizing: border-box; 
+      width: 100%; 
+      overflow: hidden;
+    }
+    
+    /* Fix all sections width */
+    section, .marquee-section, .award-strip, #wa-promo-bar {
+      max-width: 100vw;
+      overflow: hidden;
+    }
+    
+    /* Fix image overflow */
+    img { max-width: 100%; }
+    
+    /* Fix hscroll not overflowing page */
+    .hscroll-section { max-width: 100vw; overflow: hidden; }
+    .hscroll-track-outer { max-width: 100vw; }
+  </style>
 </head>
 <body>
 
@@ -102,7 +127,7 @@
 </nav>
 
 <!-- Mobile Nav -->
-<div id="mobile-nav" class="mobile-nav" style="display:none">
+<div id="mobile-nav" class="mobile-nav">
   <button id="mobile-close" class="mobile-close" aria-label="Tutup">✕</button>
   <a href="#about">Tentang Kami</a>
   <a href="#portfolio">Portfolio</a>
@@ -122,12 +147,13 @@
       src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=85"
       alt="Luxury Architecture"
       class="hero-bg-img"
+      fetchpriority="high"
     >
     <div class="hero-overlay"></div>
   </div>
 
   <div class="hero-content container">
-    <div class="hero-eyebrow">Biro Arsitektur & Interior Premium · Bogor & Semarang</div>
+    <div class="hero-eyebrow">Biro Arsitektur &amp; Interior Premium · Bogor &amp; Semarang</div>
     <h1 class="hero-headline">
       Setiap Rumah<br>
       <em>Punya Cerita</em>
@@ -135,7 +161,9 @@
     <p class="hero-sub">Kami tidak sekadar mendesain rumah — kami merajut kisah kehidupan Anda ke dalam setiap dinding, cahaya, dan ruang yang kami ciptakan.</p>
     <div class="hero-actions">
       <a href="#portfolio" class="btn-gold">Lihat Portfolio →</a>
-      <a href="https://wa.me/6283151144948?text=Halo, saya ingin konsultasi gratis" target="_blank" class="btn-outline">Konsultasi Gratis</a>
+      <a href="https://wa.me/6283151144948?text=Halo%2C%20saya%20ingin%20konsultasi%20gratis" target="_blank" class="btn-outline">
+        <i class="fab fa-whatsapp"></i> Konsultasi Gratis
+      </a>
     </div>
   </div>
 
@@ -580,20 +608,10 @@
     </div>
   </div>
 
- <div class="footer-bottom">
-  <div class="footer-copy">© 2025 Arsitek Studio. Hak Cipta Dilindungi.</div>
-
-  <div class="footer-copy">
-    <a href="https://benyoriki.com/" target="_blank" class="developer-link">
-      <span class="developer-text">Website Developer @benyoriki</span>
-      <span class="developer-particles"></span>
-    </a>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Arsitek Studio. Hak Cipta Dilindungi.</div>
+    <div class="footer-credits">Berlokasi di <a href="#">Bogor</a> & <a href="#">Semarang</a></div>
   </div>
-
-  <div class="footer-credits">
-    Berlokasi di <a href="#">Bogor</a> & <a href="#">Semarang</a>
-  </div>
-</div>
 </footer>
 
 <!-- ============================================
@@ -624,8 +642,8 @@
 
 <!-- Scripts -->
 <script src="data/localstorage.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/animations.js"></script>
-<script src="assets/js/chatbot.js"></script>
+<script src="main.js"></script>
+<script src="animations.js"></script>
+<script src="chatbot.js"></script>
 </body>
 </html>
